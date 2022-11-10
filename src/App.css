@@ -21,7 +21,7 @@ html {
 }
 
 .bannerRickAndMorty{
-  width: 40%;
+  width: 615px;
 }
 
 .input-search{
@@ -45,6 +45,7 @@ html {
 .input-search button{
   margin-left: 20px;
   height: 2.5rem;
+  border-radius: 15px;
 }
 
 .data-center{
@@ -61,12 +62,16 @@ html {
   border-radius: 20px;
   width: 890px;
   background-color: #12B0C9;
-  padding: 5px 0;
+  padding: 5px 25px;
 }
 
 .data-container p{
   padding: 5px 0;
   margin: 0;
+}
+
+.data-name .data-type .data-dimension .data-poblation{
+  margin: 0 100px;
 }
 
 .card-center{
@@ -80,6 +85,20 @@ html {
   place-items: center;
   padding: 0 20px;
   width: fit-content;
+}
+
+@media only screen and (max-width: 730px) {
+  .cards-list{
+    grid-template-columns: 1fr;
+  }
+
+  .bannerRickAndMorty{
+    width: 80%;
+  }
+
+  .data-container{
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .card-data{
